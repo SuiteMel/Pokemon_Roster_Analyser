@@ -1,7 +1,12 @@
+var party = ["trapinch", "55", "205"];
 
-var query = "trapinch";
-var queryURL = "https://pokeapi.co/api/v2/pokemon/" + query;
+$.each(party, function (x, y) {
+  var URL = "https://pokeapi.co/api/v2/pokemon/" + y;
+  renderCard(URL);
+});
 
+
+function renderCard(queryURL) {
 $.ajax({
   url: queryURL,
   method: 'GET'
@@ -14,7 +19,7 @@ $.ajax({
 
   var pokeName = $("<span>").text(response.name).addClass("h3");   
   var pokeImage = response.sprites.front_default;
-  var imageRend = $("<img>").attr("src", pokeImage).addClass("rounded-circle bg-secondary");
+  var imageRend = $("<img>").attr("src", pokeImage).addClass("rounded-circle bg-secondary mr-1");
   var pokeLabel = cardHead.append(imageRend, pokeName);
 
   var abil = $("<ul>").text("Abilities: ").addClass("list-inline");
@@ -43,5 +48,7 @@ $.ajax({
   cardBody.append(abil, types, stats);
   cardDiv.append(cardHead, cardBody);
 
-  $(".container").append(cardDiv);
+  $("#test").append(cardDiv);
 });
+
+}
