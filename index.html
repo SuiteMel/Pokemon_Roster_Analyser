@@ -1,83 +1,178 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!DOCTYPE html>
+<html lang="en-US">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
 
-    <div class="col-md-8">
-    <div class="card-group">
-        <div class="card border border-primary m-4"style="height:250px; width:250px">
-          <img class="card-img-top mx-auto" src="..." alt="Card image cap" style="height:100px ;width:100px">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-        <div class="card border border-primary m-4" style="height:250px; width:200px">
-          <img class="card-img-top rounded-cirlce" src="..." alt="Card image cap" style="height:100px ;width:100px">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-        <div class="card border border-primary m-4" style="height:250px; width:200px">
-          <img class="card-img-top" src="..." alt="Card image cap" style="height:100px ;width:100px">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-    
-      </div>
-      </div>
-      <div class="col-md-8">
-            <div class="card-group">
-                    <div class="card border border-primary m-4"style="height:250px; width:250px">
-                  <img class="card-img-top" src="..." alt="Card image cap" style="height:100px; width:100px" >
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
-                <div class="card border border-primary m-4"style="height:250px; width:250px">
-                  <img class="card-img-top" src="..." alt="Card image cap" style="height:100px ;width:100px">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
-                <div class="card border border-primary m-4"style="height:250px; width:250px">
-                  <img class="card-img-top" src="..." alt="Card image cap"style="height:100px ;width:100px">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
-              </div>
-              </div>
-              <div id="twitter-wjs"></div>
+	<title></title>
 
-    <!-- Optional JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="assets/javascript/logic.js"></script>
-  </body>
+	<link rel="stylesheet" type="text/css" href="assets\reset.css">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets\style.css">
+</head>
+
+<body>
+	<div class="container-fluid" style="padding:5px">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="panel-heading">
+					<H2>
+						<a href="https://fontmeme.com/pokemon-font/">
+							<img src="https://fontmeme.com/permalink/180308/e0307afa6a9ccb8c980b9f97e25fdc91.png" alt="pokemon-font" border="0" height="40">
+						</a>
+					</H2>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-7">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="panel-body">
+							<a href="https://placeholder.com">
+								<img src="http://via.placeholder.com/200x200">
+							</a>
+							<a href="https://placeholder.com">
+								<img src="http://via.placeholder.com/200x200">
+							</a>
+							<a href="https://placeholder.com">
+								<img src="http://via.placeholder.com/200x200">
+							</a>
+							<div class="nextrow">
+								<a href="https://placeholder.com">
+									<img src="http://via.placeholder.com/200x200">
+								</a>
+								<a href="https://placeholder.com">
+									<img src="http://via.placeholder.com/200x200">
+								</a>
+								<a href="https://placeholder.com">
+									<img src="http://via.placeholder.com/200x200">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+		
+			<div class="col-lg-5">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h2>
+							<a href="https://fontmeme.com/pokemon-font/"> 
+								<img src="https://fontmeme.com/permalink/180308/199b158d3fab8883c2ad0e3259b33c9b.png" alt="pokemon-font" border="0">
+							</a>
+						</h2>
+						<div class="panel-body">
+							<form class="form-horizontal">
+
+								<div class="form-group">
+
+									<label class="control-label col-lg-3" for="search"></label>
+
+									<div class="col-sm-12">
+
+										<input type="email" class="form-control" id="searcg" placeholder="Enter search">     </div>
+								</div>
+						</div>
+					</div>
+					</div>
+				
+
+				<div class="panel1">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h2>
+										<a href="https://fontmeme.com/pokemon-font/">
+											<img src="https://fontmeme.com/permalink/180308/4b4a256df7047698ea69e3103c0aea2f.png" alt="pokemon-font" border="0">
+										</a>
+									</h2>
+									<div class="panel-body">
+
+										<form class="form-horizontal">
+											<div class="form-group">
+												<label class="control-label col-lg-3" for="search"></label>
+												<div class="col-sm-12">
+													<input type="email" class="form-control" id="searcg" placeholder="Enter search">
+												</div>
+											</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid">
+					<div id="message">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h2>
+											<a href="https://fontmeme.com/pokemon-font/">
+												<img src="https://fontmeme.com/permalink/180308/e36c995b9a4177fab3bd6d95dd1fb599.png" alt="pokemon-font" border="0">
+											</a>
+										</h2>
+										<div class="panel-body">
+											<form class="form-horizontal">
+												<div class="form-group">
+													<label class="control-label col-lg-12" for="search"></label>
+													<div class="col-sm-12">
+														<input type="email" class="form-control" id="searcg" placeholder="Enter search">
+													</div>
+												</div>
+
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					
+				
+		
+		
+		<div class="panel1">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="panel panel-default">
+
+						<div class="panel-heading">
+							<h2>
+								<a href="https://fontmeme.com/pokemon-font/">
+									<img src="https://fontmeme.com/permalink/180308/2595ad98ea26fcf4be52e24be9a0548d.png" alt="pokemon-font" border="0">
+								</a>
+							</h2>
+							<div class="panel-body">
+								<form class="form-horizontal">
+									<div class="form-group">
+
+										<label class="control-label col-lg-12" for="search">
+											<div class="col-sm-12">
+												<input type="email" class="form-control" id="searcg" placeholder="Enter search">     </div>
+									</div>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+
+
+
+
+	</form>
+	
+</body>
+
 </html>

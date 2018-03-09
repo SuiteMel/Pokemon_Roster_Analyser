@@ -1,0 +1,78 @@
+
+    body{
+        background: url(http://icloudpicture.com/wp-content/uploads/2016/04/Legendary-Pokemon-Wallpaper.jpg);
+    }
+
+   .panel-body{
+       padding:10px;
+   }
+    
+   #message{
+    
+     margin-bottom: 5500px;
+      
+      
+   }
+
+.panel-heading,
+.btn
+{
+    font-family: 'Anton', sans-serif;
+    background-color:rgb(181, 184, 17); 
+    color: rgba(255, 255, 255, 0.555);
+    text-align: center;
+}
+
+.panel-body{
+background-color: rgb(3, 31, 7);
+
+}
+.panel1{
+    padding: 5px;
+    }
+
+@media (min-width: 768px) {
+    .col-sm-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+.bold {
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: trainFont;
+    src: url(cali.ttf);
+}
+
+h1 {
+    font-family: trainFont;
+    font-size: 200px;
+    text-align: center;
+}
+
+h2{
+    height: 50px;
+    margin-bottom:50px;
+    padding: 16px;
+}
+
+.nextrow{
+    margin: 15px;
+}
