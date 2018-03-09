@@ -11,17 +11,29 @@ var config = {
   };
   firebase.initializeApp(config);
 
-  $("button").on("click", function() {
-      var search = $(this).attr("data-tweet");
-      var queryURL = "	https://api.twitter.com/oauth/access_token=4875818472-9lJS2CiuCwFSHrJafu9s3J0IR3OyCdATw5mHoNJ" + search + "";
+//   $("button").on("click", function() {
+//       var search = $(this).attr("data-tweet");
+//       var queryURL = "	https://api.twitter.com/oauth/access_token=4875818472-9lJS2CiuCwFSHrJafu9s3J0IR3OyCdATw5mHoNJ" + search + "";
 
-      $.ajax({
-          url:queryURL,
-          method: "GET"
-      }).then(function(response) {
-          console.log(response);
-      });
+//       $.ajax({
+//           url:queryURL,
+//           method: "GET"
+//       }).then(function(response) {
+//           console.log(response);
+//       });
+//   });
+var settings = {
+    // "async": true,
+    // "crossDomain": true,
+    "url": "https://api.twitter.com/oauth2/token?grant_type=client_credentials",
+    "method": "POST",
+    "headers": {
+      "Authorization": "Basic UkdvRGtld3ltMGVpYlBoMGpYaGR3VEJOdjpyNmVwbEVCV1VkUVYySmFGeGZaeEtsY3ZzbXVVb2hxVjQ5WUVkQnBWUlREdmVINmxrMw=="
+    }
+  }
+  
+  $.ajax(settings).done(function (response) {
+    console.log(response);
   });
-
 
 });
